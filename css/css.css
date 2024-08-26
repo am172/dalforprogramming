@@ -825,8 +825,10 @@ nav.dark-mode {
 }
 
 .profile img {
-    width: 135px;
-    border-radius: 50%;
+     width: 140px;
+    height: 130px;
+
+    border-radius: 30%;
 }
 
 
@@ -1137,11 +1139,13 @@ nav.dark-mode {
         padding-top: 0px;
         text-align: center;
         padding-bottom: 30px;
+                padding-right: 20px;
     }
 
     .profile img {
         width: 80px;
-        border-radius: 50%;
+        height: 80px;
+        border-radius: 30%;
     }
 
     #experts .expert-box {
@@ -1424,11 +1428,14 @@ nav.dark-mode {
         padding-bottom: 30px;
         margin-left: 15px;
         margin-right: 15px;
+                padding-right: 3px;
     }
 
     .profile img {
-        width: 61px;
-        border-radius: 50%;
+   
+        width: 64px;
+        height: 61px;
+        border-radius: 30%;
     }
 
     h6 {
@@ -1494,17 +1501,20 @@ nav.dark-mode {
     }
 
     #experts {
-        padding: 0;
+ padding: 0;
         padding-top: 0px;
         text-align: center;
         padding-bottom: 30px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 7px;
+        margin-right: 12px;
+        padding-right: 2px;
     }
 
     .profile img {
-        width: 61px;
-        border-radius: 50%;
+    
+        width: 64px;
+        height: 61px;
+        border-radius: 30%;
     }
 
     h6 {

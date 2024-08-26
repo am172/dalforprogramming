@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تعلم تطوير الواجهات الأمامية (Front-End) مع دال | الدروس والمصادر</title>
-    <meta name="description" content="ابدأ رحلتك في تطوير الواجهات الأمامية مع دال. اكتشف دروس ومصادر شاملة لتعلم HTML، CSS، JavaScript وتقنيات أخرى لتصبح مطور واجهات أمامية محترف.">
+    <title>تعلم تطوير الخلفيات (Back-End) مع دال | الدروس والمصادر</title>
+    <meta name="description" content="ابدأ رحلتك في تطوير الخلفيات مع دال. اكتشف دروس ومصادر شاملة لتعلم قواعد البيانات، الخوادم، البرمجة بلغات مثل Python، Java، Node.js وغيرها.">
     <link rel="stylesheet" href="css/css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/all.min.css">
@@ -12,6 +12,101 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Fustat:wght@200..800&display=swap');
 </style>
     <style>
+        /* CSS for Back-End Roadmap Section */
+#back-end-roadmap {
+    font-family: 'Tajawal', sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin: 30px 0;
+    direction: rtl;
+}
+
+#back-end-roadmap h1,
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 32px;
+}
+
+#back-end-roadmap p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: justify;
+}
+
+.roadmap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.stack {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stack h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.stack p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.stack ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.stack ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Different Screens */
+@media (max-width: 1024px) {
+    .stack {
+        width: 47%;
+    }
+}
+
+@media (max-width: 768px) {
+    .stack {
+        width: 100%;
+    }
+    
+    #back-end-roadmap h1 {
+        font-size: 28px;
+    }
+
+    #back-end-roadmap p {
+        font-size: 16px;
+    }
+
+    .stack h2 {
+        font-size: 22px;
+    }
+
+    .stack p, .stack ul li {
+        font-size: 14px;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
 </style>
 <style>
@@ -28,10 +123,9 @@
 
         <div class="navigation">
             <ul>
-                <img  id="menu-close" src="css/images/x.png" alt="">
+                <img  id="menu-close" src="/css/images/x.png" alt="">
                  <li> <a   class="active" href="masar.html">المحتوى التعليمي </a></li>
                 <li> <a href="blog.html">المسارات</a></li>
-
                 <li> <a href="about.html">تواصل معنا</a></li>
                 
             </ul>
@@ -40,20 +134,90 @@
         </div>
     </nav>
 
+  <section id="blog-container">
+        <div class="blogs bologpost">
+            <div class="post">
+                <img src="css/images/back.jpg" alt="">
+            </div>
+        </div>
+  </section>    
   
-
-    <section id="web">
+<!-- 
+    <section id="web" class="back">
+              
     
-    </section>
-    <br>
-    <br>
+    </section> -->
+ 
   
 
 <!-- ========================html =======================-->
+<!-- HTML Section for Back-End Roadmap -->
+<section id="back-end-roadmap">
+    <h1>اختيار مسار  Back-End</h1>
+    <p>
+        عندما تقرر الدخول في مجال تطوير الخلفيات (Back-End)، ستواجه عدة اختيارات فيما يتعلق بالأدوات والتقنيات التي يمكن استخدامها. من المهم أن تختار المسار الأنسب بناءً على متطلبات المشروع واهتماماتك الشخصية. كل ستاك (Stack) يتألف من مجموعة من الأدوات والتقنيات التي تعمل معًا لبناء التطبيقات من جهة الخادم (Server-Side).
+    </p>
+    <div class="roadmap">
+        <!-- Node.js Stack -->
+        <div class="stack">
+            <h2>Node.js</h2>
+            <p>
+                Node.js هو بيئة تشغيل تعتمد على JavaScript تتيح لك تشغيل JavaScript على الخادم. هذا المسار مناسب إذا كنت مهتمًا ببناء تطبيقات سريعة وقابلة للتوسع. الأدوات الرئيسية التي ستحتاج إلى تعلمها:
+            </p>
+            <ul>
+                <li>JavaScript: الأساس لفهم Node.js والعمل به.</li>
+                <li>Node.js: لإدارة الخوادم والعمليات الخلفية.</li>
+                <li>Express.js: إطار عمل لبناء تطبيقات ويب بسرعة وسهولة.</li>
+                <li>MongoDB: قاعدة بيانات NoSQL مرنة وقابلة للتوسع.</li>
+            </ul>
+        </div>
+        
+        <!-- Python & Django Stack -->
+        <div class="stack">
+            <h2>Python & Django</h2>
+            <p>
+                إذا كنت تفضل لغة Python وترغب في بناء تطبيقات ويب قوية وسريعة التطوير، فإن إطار Django سيكون الخيار الأمثل. الأدوات التي يجب تعلمها:
+            </p>
+            <ul>
+                <li>Python: تعلم الأساسيات والمتقدمات في هذه اللغة المرنة.</li>
+                <li>Django: إطار عمل يعتمد على Python ويوفر العديد من الأدوات لبناء تطبيقات ويب معقدة.</li>
+                <li>PostgreSQL أو MySQL: قواعد بيانات قوية تستخدم مع Django.</li>
+            </ul>
+        </div>
+        
+        <!-- PHP & Laravel Stack -->
+        <div class="stack">
+            <h2>PHP & Laravel</h2>
+            <p>
+                PHP هي لغة برمجة مشهورة تستخدم على نطاق واسع في تطوير الويب، وLaravel هو إطار عمل حديث يجعل بناء التطبيقات أسرع وأكثر كفاءة. الأدوات التي يجب تعلمها:
+            </p>
+            <ul>
+                <li>PHP: تعلم الأساسيات والمتقدمات في تطوير الويب باستخدام هذه اللغة.</li>
+                <li>Laravel: إطار عمل يتيح لك بناء تطبيقات ويب قوية ومعقدة بسهولة.</li>
+                <li>MySQL: قاعدة بيانات تستخدم بشكل واسع مع PHP وLaravel.</li>
+            </ul>
+        </div>
+        
+        <!-- Java & Spring Stack -->
+        <div class="stack">
+            <h2>Java & Spring</h2>
+            <p>
+                Java هي لغة برمجة قوية ومستقرة، وSpring هو إطار عمل يوفر حلول متكاملة لتطوير تطبيقات الويب. هذا المسار مناسب إذا كنت مهتمًا ببناء تطبيقات مؤسسية (Enterprise). الأدوات التي يجب تعلمها:
+            </p>
+            <ul>
+                <li>Java: فهم شامل لهذه اللغة القوية.</li>
+                <li>Spring Framework: إطار عمل شامل يوفر حلول متكاملة لبناء تطبيقات قوية.</li>
+                <li>Oracle أو MySQL: قواعد بيانات تستخدم مع Java وSpring.</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
+
+<h1>المصادر</h1>
  <section id="experts">
-    <h1>تعلم لغة HTML</h1>
-    <p>تعلم كيفية بناء صفحات الويب من خلال فهم العناصر والتنسيقات الأساسية</p>
+    <h1>لغة البرمجة</h1>
+    <p>ابدأ رحلتك في تعلم الـ Back-End من خلال إتقان لغة البرمجة واكتساب المهارات اللازمة لحل المشكلات وبناء تطبيقات فعّالة.</p>
     <button id="open">   المصادر   </button>
     <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
     <hr>
@@ -61,27 +225,22 @@
     
     <div class="expert-box">
     <!-- ************************* -->
-        <div onclick="window.location.href='https:\/\/www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&si=KMBPgHwXhhH_WFow';" class="profile">
-            <img src="css/images/alzero2106285781924731693_n.jpg" alt="">
-            <h6>أسامة الزيرو</h6>
+        <div onclick="window.location.href='https:\/\/www.satr.codes/paths/ecbAGsuqOQ/view';" class="profile">
+            <img src="css/images/js.png" alt="">
+            <h6>Java Script</h6>
            
-            <i class="fa-solid fa-clock-rotate-left"> 2021</i>
-            <br>
-            
-            <i class="fa-solid fa-eye">  11 m</i> 
+      
             <div class="pro-links">
               
-                      
+                    
             </div>
         </div>
         <!-- ****************** -->
-                <div onclick="window.location.href='https:\/\/www.satr.codes/courses/CATspNvVjT/view';" class="profile">
-            <img src="css/images/saatr.png" alt="">
+                <div onclick="window.location.href='https:\/\/www.youtube.com/playlist?list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq&si=Ansdhznnqlz20t7S';" class="profile">
+            <img src="css/images/php.png" alt="">
             <br>
-            <br>
-            <br>
-            <br>
-            <h6>أكاديمية سطر</h6>
+           
+            <h6>PHP</h6>
           
             <br>
             
@@ -93,33 +252,19 @@
         </div>
 <!-- ****************** -->
 
-        <div onclick="window.location.href='https:\/\/www..youtube.com/watch?v=q3yFo-t1ykw&pp=ygUUaHRtbCDYtNix2K0g2YPYp9mF2YQ%3D';" class="profile">
-            <img src="css/images/gamal.jpg" alt="">
-            <h6>عبدالرحمن جمال</h6>
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=mNvJipMTKSM&list=PLCInYL3l2AajYlZGzU_LVrHdoouf8W6ZN';" class="profile">
+            <img src="css/images/java.png" alt="">
+            <h6>Java</h6>
            
-            <i class="fa-solid fa-clock-rotate-left"> 2021</i>
-            <br>
-            
-            <i class="fa-solid fa-eye">  3.5 m</i> 
-            <div class="pro-links">
-              
-                      
-            </div>
+        
         </div>
 <!-- ****************** -->
 
-        <div onclick="window.location.href='https:\/\/www.noor-book.com/%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%84%D8%AE%D8%B5%D8%A7%D8%AA-HTML-%D9%88-CSS-%D9%88-Javascript-%D9%88-SASS-%D8%A3%D8%B3%D8%A7%D9%85%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%B1%D9%88-pdf';" class="profile">
-            <img src="css/images/summm.jpg" alt="">
-            <h6> ملخص html</h6>
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=Lm6irXWjWIo&list=PLynpHWDBs7h1e8dkxgO6jwUHaNb3UTGwQ';" class="profile">
+            <img src="css/images/python.png" alt="">
+            <h6> Python</h6>
            
-            <i class="fa-solid fa-clock-rotate-left"> 2023</i>
-            <br>
-            
-            <i class="fa-solid fa-eye">  6 k</i> 
-            <div class="pro-links">
-              
-                      
-            </div>
+        
         </div>
 <!-- ****************** -->
 
@@ -129,8 +274,8 @@
   <!-- ////////////////////////////////////////////////////////////// -->
    <!-- ========================css =======================-->
  <section id="experts">
-    <h1>تعلم لغة CSS </h1>
-    <p> هي لغة تُستخدم لتنسيق وتجميل صفحات الويب، مما يسمح بفصل التصميم عن المحتوى وتحديد الأنماط الخاصة بالألوان، الخطوط، التباعد، والتخطيطات</p>
+    <h1>Frameworks </h1>
+    <p>تعرف على أطر العمل (Frameworks) التي تساعدك في تطوير تطبيقات الـ Back-End بسرعة وكفاءة  </p>
 <button id="open">   المصادر   </button>
     <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
     <hr>
@@ -138,27 +283,20 @@
     
     <div class="expert-box">
     <!-- ************************* -->
-        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=X1ulCwyhCVM&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe';" class="profile">
-            <img src="css/images/alzero2106285781924731693_n.jpg" alt="">
-            <h6>أسامة الزيرو</h6>
-           
-            <i class="fa-solid fa-clock-rotate-left"> 2021</i>
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=Lm6irXWjWIo&list=PLynpHWDBs7h1e8dkxgO6jwUHaNb3UTGwQ';" class="profile">
+            <img src="css/images/gango.png" alt="">
             <br>
-            
-            <i class="fa-solid fa-eye">  10 m</i> 
-            <div class="pro-links">
-              
-                      
-            </div>
+            <br>
+            <h6>Django</h6>
+           
+       
         </div>
         <!-- ****************** -->
-                <div onclick="window.location.href='https:\/\/www.satr.codes/courses/hNUwyBUKmF/view';" class="profile">
-            <img src="css/images/saatr.png" alt="">
+                <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=_t4c-vxalp4&pp=ygUZ2YPZiNix2LMgbmV4dCBqcyDYudix2KjZig%3D%3D';" class="profile">
+            <img src="css/images/nextjs.jfif" alt="">
             <br>
-            <br>
-            <br>
-            <br>
-            <h6>أكاديمية سطر</h6>
+           
+            <h6>Next.js</h6>
           
             <br>
             
@@ -170,34 +308,14 @@
         </div>
 <!-- ****************** -->
 
-        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=b5UobzCaVEg&pp=ygUTY3NzINi02LHYrSDZg9in2YXZhA%3D%3D';" class="profile">
-            <img src="css/images/online.jpg" alt="">
-            <h6>برمجة اونلاين</h6>
-           
-            <i class="fa-solid fa-clock-rotate-left"> 2022</i>
-            <br>
-            
-            <i class="fa-solid fa-eye">  53 k</i> 
-            <div class="pro-links">
-              
-                      
-            </div>
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=bXjRQM_VK_I&list=PLDoPjvoNmBAy_mAhY0x8cHf8oSGPKsEKP';" class="profile">
+            <img src="css/images/laravel.jfif" alt="">
+            <h6>Laravel</h6>
+      
         </div>
 <!-- ****************** -->
 
-        <div onclick="window.location.href='https:\/\/www.noor-book.com/%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%84%D8%AE%D8%B5%D8%A7%D8%AA-HTML-%D9%88-CSS-%D9%88-Javascript-%D9%88-SASS-%D8%A3%D8%B3%D8%A7%D9%85%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%B1%D9%88-pdf';" class="profile">
-            <img src="css/images/summm.jpg" alt="">
-            <h6> ملخص css</h6>
-           
-            <i class="fa-solid fa-clock-rotate-left"> 2023</i>
-            <br>
-            
-            <i class="fa-solid fa-eye">  6 k</i> 
-            <div class="pro-links">
-              
-                      
-            </div>
-        </div>
+  
 <!-- ****************** -->
 
      
@@ -207,8 +325,8 @@
   <!-- ////////////////////////////////////////////////////////////// -->
    <!-- ========================java script =======================-->
  <section id="experts">
-    <h1>تعلم Java Script</h1>
-    <p> هي لغة برمجة تُستخدم لإضافة التفاعلية والديناميكية إلى صفحات الويب، مما يسمح بإنشاء محتوى متحرك، التفاعل مع المستخدم، والتعامل مع البيانات بشكل فعال</p>
+    <h1>Databases</h1>
+    <p> اكتسب المعرفة اللازمة في قواعد البيانات (Databases) لإدارة وتخزين البيانات بشكل فعال </p>
     <button id="open">  المصادر     </button>
     <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
     <hr>
@@ -216,64 +334,33 @@
     
     <div class="expert-box">
     <!-- ************************* -->
-        <div onclick="window.location.href='https:youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&si=y69eIqF5ETxOdvcH';" class="profile">
-            <img src="/css/images/alzero2106285781924731693_n.jpg" alt="">
-            <h6>أسامة الزيرو</h6>
-           
-            <i class="fa-solid fa-clock-rotate-left"> 2021</i>
+        <div onclick="window.location.href='https:satr.codes/courses/GwQWjnuJVq/view';" class="profile">
+            <img src="css/images/mongo.png" alt="">
             <br>
-            
-            <i class="fa-solid fa-eye">  11 m</i> 
-            <div class="pro-links">
-              
-                      
-            </div>
+            <h6> MongoDB</h6>
+           
+      
         </div>
         <!-- ****************** -->
-                <div onclick="window.location.href='https:\/\/www.youtube.com/playlist?list=PLYyqC4bNbCIeLEjcSPO61bsGPKEvYceb0&si=RfgYo3FO8bnUHT8v';" class="profile">
-            <img src="css/images/tarmiz.jpg" alt="">
+                <div onclick="window.location.href='https:www.youtube.com/watch?v=DftlOK7fCtc&list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9';" class="profile">
+            <img src="css/images/mysql(1).png" alt="">
          
-            <h6>أكاديمية ترميز</h6>
+            <h6>MySQL</h6>
           
-            
-                       <i class="fa-solid fa-clock-rotate-left"> 2022</i>
-        <br>
-            <i class="fa-solid fa-eye">  500 k</i> 
-          
-            <div class="pro-links">
-              
-                      
-            </div>
+       
         </div>
 <!-- ****************** -->
 
-        <div onclick="window.location.href='https:www.\/\/www.youtube.com/watch?v=PWuTLTFMtYw&list=PLknwEmKsW8OuTqUDaFRBiAViDZ5uI3VcE';" class="profile">
-            <img src="css/images/gamal.jpg" alt="">
-            <h6>عبدالرحمن جمال</h6>
-           
-            <i class="fa-solid fa-clock-rotate-left"> 2022</i>
+        <div onclick="window.location.href='https:www.youtube.com/watch?v=qCmnv-cfmCU&list=PLnpnMbLIyidKrBOjXK8G6hiR4awqR_Vfq';" class="profile">
+            <img src="css/images/oracle.jfif" alt="">
             <br>
-            
-            <i class="fa-solid fa-eye">  4 m</i> 
-            <div class="pro-links">
-              
-                      
-            </div>
+            <br>
+            <h6>Oracle</h6>
+       
         </div>
 <!-- ****************** -->
 
-        <div onclick="window.location.href='https:\/\/www.noor-book.com/%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D9%84%D8%AE%D8%B5%D8%A7%D8%AA-HTML-%D9%88-CSS-%D9%88-Javascript-%D9%88-SASS-%D8%A3%D8%B3%D8%A7%D9%85%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%B1%D9%88-pdf';" class="profile">
-            <img src="css/images/summm.jpg" alt="">
-            <h6> ملخص html</h6>
-           
-            <i class="fa-solid fa-clock-rotate-left"> 2023</i>
-            <br>
-            
-            <i class="fa-solid fa-eye">  6 k</i> 
-            <div class="pro-links">
-              
-                      
-            </div>
+
         </div>
 <!-- ****************** -->
 
@@ -283,8 +370,8 @@
   <!-- ////////////////////////////////////////////////////////////// -->
    <!-- ========================framwork =======================-->
  <section id="experts">
-    <h1>تعلم Framework</h1>
-    <p>إطارات العمل هي بيئات برمجية توفر أدوات ومكتبات جاهزة لتسريع عملية تطوير تطبيقات الويب، مثل React وAngular وVue.js، مما يتيح كتابة كود أكثر تنظيماً وقابلية للصيانة</p>
+    <h1>API</h1>
+    <p>تعلم كيفية بناء واستخدام واجهات برمجة التطبيقات (APIs) لتسهيل التواصل بين الأنظمة المختلفة وجعل تطبيقاتك أكثر تفاعلية ومرونة</p>
     <button id="open"> المصادر     </button>
     <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
     <hr>
@@ -292,34 +379,27 @@
     
     <div class="expert-box">
     <!-- ************************* -->
-        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=QDGe4emCPG0&pp=ygUbcmVhY3Qg2LTYsditINio2KfZhNi52LHYqNmK';" class="profile">
-            <img src="css/images/react.png" alt="">
-            <h6> React</h6>
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=2AWFuSJ_Cxg&list=PLqPejUavRNTUbBmD6zRNRIHfEeSuUK53H';" class="profile">
+            <img src="css/images/rest.png" alt="">
+            <h6> Rest</h6>
            
 
-            <div class="pro-links">
-              
-                      
-            </div>
+            
         </div>
         <!-- ****************** -->
-                <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=q0coNra92_g&list=PLLlr6jKKdyK0dH_RV8LefwlirJzq7LtkG';" class="profile">
-            <img src="css/images/angular.jfif" alt="">
+                <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=CLpmD7hxiBs&list=PLDoPjvoNmBAwH_PyuEFjk3OvXflJJrDRQ';" class="profile">
+            <img src="css/images/jsonapi.png" alt="">
            
-            <h6>Angular </h6>
+            <h6>Json </h6>
          
           
-            <div class="pro-links">
-              
-                      
-            </div>
         </div>
 
 <!-- ****************** -->
 
-        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=Vne-X1taBfI&list=PLzjSlWqF2aTdehPN-zFc1TKcH8eNVn1JV';" class="profile">
-            <img src="css/images/viu.png" alt="">
-            <h6>Vue.js </h6>
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=mKjvKPlb1rA&list=PLqq-6Pq4lTTZTYpk_1DOowOGWJMIH5T39';" class="profile">
+            <img src="css/images/soap-cloud-gear-thumbnail-1024x957.jpg" alt="">
+            <h6>Soap </h6>
            
          
         </div>
@@ -331,29 +411,13 @@
   </section>
   <!-- ////////////////////////////////////////////////////////////// -->
    <!-- ========================git =======================-->
- <section id="experts">
-    <h1>تعلم git & github</h1>
-    <p>Git هو نظام تحكم بالإصدارات يُستخدم لإدارة وتتبع تغييرات الكود المصدري، بينما GitHub هو منصة استضافة تعتمد على Git لتسهيل التعاون بين المطورين ومشاركة المشاريع البرمجية عبر الإنترنت.</p>
-    <button id="open">  المصادر     </button>
-    <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
-    <hr>
-    <hr>
-    
-    <div class="expert-box">
-    <!-- ************************* -->
-        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=ACOiGZoqC8w&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF';" class="profile">
-            <img src="css/images/alzero2106285781924731693_n.jpg" alt="">
-            <h6>أسامة الزيرو</h6>
-           
-                      
-          
-        </div>
-</section>
+
 
 
 
  
  
+
   <footer>
     <div class="footer-col">
         <h3> الأدوات</h3>
@@ -383,6 +447,7 @@
         </div>
     </div>
 </footer>
+
 
 
     <script src="js.js">

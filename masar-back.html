@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم تطوير الخلفيات (Back-End) مع دال | الدروس والمصادر</title>
+    <meta name="description" content="ابدأ رحلتك في تطوير الخلفيات مع دال. اكتشف دروس ومصادر شاملة لتعلم قواعد البيانات، الخوادم، البرمجة بلغات مثل Python، Java، Node.js وغيرها.">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Fustat:wght@200..800&display=swap');
+</style>
+    <style>
+        /* CSS for Back-End Roadmap Section */
+#back-end-roadmap {
+    font-family: 'Tajawal', sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin: 30px 0;
+    direction: rtl;
+}
+
+#back-end-roadmap h1,
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 32px;
+}
+
+#back-end-roadmap p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: justify;
+}
+
+.roadmap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.stack {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stack h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.stack p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.stack ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.stack ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Different Screens */
+@media (max-width: 1024px) {
+    .stack {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .stack {
+        width: 100%;
+    }
+    
+    #back-end-roadmap h1 {
+        font-size: 28px;
+    }
+
+    #back-end-roadmap p {
+        font-size: 16px;
+    }
+
+    .stack h2 {
+        font-size: 22px;
+    }
+
+    .stack p, .stack ul li {
+        font-size: 14px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- navigation -->
+
+      <nav>
+       <a href="index.html"><img src="css/images/دال.jpg" alt=""></a> 
+
+        <div class="navigation">
+            <ul>
+                <img  id="menu-close" src="/css/images/x.png" alt="">
+                 <li> <a   class="active" href="masar.html">المحتوى التعليمي </a></li>
+                <li> <a href="blog.html">المسارات</a></li>
+                <li> <a href="about.html">تواصل معنا</a></li>
+                
+            </ul>
+            
+            <img id="menu-btn" src="css/images/klipartz.com.png" alt="">
+        </div>
+    </nav>
+
+  <section id="blog-container">
+        <div class="blogs bologpost">
+            <div class="post">
+                <img src="css/images/back.jpg" alt="">
+            </div>
+        </div>
+  </section>    
+  
+<!-- 
+    <section id="web" class="back">
+              
+    
+    </section> -->
+ 
+  
+
+<!-- ========================html =======================-->
+<!-- HTML Section for Back-End Roadmap -->
+<section id="back-end-roadmap">
+    <h1>اختيار مسار  Back-End</h1>
+    <p>
+        عندما تقرر الدخول في مجال تطوير الخلفيات (Back-End)، ستواجه عدة اختيارات فيما يتعلق بالأدوات والتقنيات التي يمكن استخدامها. من المهم أن تختار المسار الأنسب بناءً على متطلبات المشروع واهتماماتك الشخصية. كل ستاك (Stack) يتألف من مجموعة من الأدوات والتقنيات التي تعمل معًا لبناء التطبيقات من جهة الخادم (Server-Side).
+    </p>
+    <div class="roadmap">
+        <!-- Node.js Stack -->
+        <div class="stack">
+            <h2>Node.js</h2>
+            <p>
+                Node.js هو بيئة تشغيل تعتمد على JavaScript تتيح لك تشغيل JavaScript على الخادم. هذا المسار مناسب إذا كنت مهتمًا ببناء تطبيقات سريعة وقابلة للتوسع. الأدوات الرئيسية التي ستحتاج إلى تعلمها:
+            </p>
+            <ul>
+                <li>JavaScript: الأساس لفهم Node.js والعمل به.</li>
+                <li>Node.js: لإدارة الخوادم والعمليات الخلفية.</li>
+                <li>Express.js: إطار عمل لبناء تطبيقات ويب بسرعة وسهولة.</li>
+                <li>MongoDB: قاعدة بيانات NoSQL مرنة وقابلة للتوسع.</li>
+            </ul>
+        </div>
+        
+        <!-- Python & Django Stack -->
+        <div class="stack">
+            <h2>Python & Django</h2>
+            <p>
+                إذا كنت تفضل لغة Python وترغب في بناء تطبيقات ويب قوية وسريعة التطوير، فإن إطار Django سيكون الخيار الأمثل. الأدوات التي يجب تعلمها:
+            </p>
+            <ul>
+                <li>Python: تعلم الأساسيات والمتقدمات في هذه اللغة المرنة.</li>
+                <li>Django: إطار عمل يعتمد على Python ويوفر العديد من الأدوات لبناء تطبيقات ويب معقدة.</li>
+                <li>PostgreSQL أو MySQL: قواعد بيانات قوية تستخدم مع Django.</li>
+            </ul>
+        </div>
+        
+        <!-- PHP & Laravel Stack -->
+        <div class="stack">
+            <h2>PHP & Laravel</h2>
+            <p>
+                PHP هي لغة برمجة مشهورة تستخدم على نطاق واسع في تطوير الويب، وLaravel هو إطار عمل حديث يجعل بناء التطبيقات أسرع وأكثر كفاءة. الأدوات التي يجب تعلمها:
+            </p>
+            <ul>
+                <li>PHP: تعلم الأساسيات والمتقدمات في تطوير الويب باستخدام هذه اللغة.</li>
+                <li>Laravel: إطار عمل يتيح لك بناء تطبيقات ويب قوية ومعقدة بسهولة.</li>
+                <li>MySQL: قاعدة بيانات تستخدم بشكل واسع مع PHP وLaravel.</li>
+            </ul>
+        </div>
+        
+        <!-- Java & Spring Stack -->
+        <div class="stack">
+            <h2>Java & Spring</h2>
+            <p>
+                Java هي لغة برمجة قوية ومستقرة، وSpring هو إطار عمل يوفر حلول متكاملة لتطوير تطبيقات الويب. هذا المسار مناسب إذا كنت مهتمًا ببناء تطبيقات مؤسسية (Enterprise). الأدوات التي يجب تعلمها:
+            </p>
+            <ul>
+                <li>Java: فهم شامل لهذه اللغة القوية.</li>
+                <li>Spring Framework: إطار عمل شامل يوفر حلول متكاملة لبناء تطبيقات قوية.</li>
+                <li>Oracle أو MySQL: قواعد بيانات تستخدم مع Java وSpring.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<h1>المصادر</h1>
+ <section id="experts">
+    <h1>لغة البرمجة</h1>
+    <p>ابدأ رحلتك في تعلم الـ Back-End من خلال إتقان لغة البرمجة واكتساب المهارات اللازمة لحل المشكلات وبناء تطبيقات فعّالة.</p>
+    <button id="open">   المصادر   </button>
+    <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
+    <hr>
+    <hr>
+    
+    <div class="expert-box">
+    <!-- ************************* -->
+        <div onclick="window.location.href='https:\/\/www.satr.codes/paths/ecbAGsuqOQ/view';" class="profile">
+            <img src="css/images/js.png" alt="">
+            <h6>Java Script</h6>
+           
+      
+            <div class="pro-links">
+              
+                    
+            </div>
+        </div>
+        <!-- ****************** -->
+                <div onclick="window.location.href='https:\/\/www.youtube.com/playlist?list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq&si=Ansdhznnqlz20t7S';" class="profile">
+            <img src="css/images/php.png" alt="">
+            <br>
+           
+            <h6>PHP</h6>
+          
+            <br>
+            
+          
+            <div class="pro-links">
+              
+                      
+            </div>
+        </div>
+<!-- ****************** -->
+
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=mNvJipMTKSM&list=PLCInYL3l2AajYlZGzU_LVrHdoouf8W6ZN';" class="profile">
+            <img src="css/images/java.png" alt="">
+            <h6>Java</h6>
+           
+        
+        </div>
+<!-- ****************** -->
+
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=Lm6irXWjWIo&list=PLynpHWDBs7h1e8dkxgO6jwUHaNb3UTGwQ';" class="profile">
+            <img src="css/images/python.png" alt="">
+            <h6> Python</h6>
+           
+        
+        </div>
+<!-- ****************** -->
+
+     
+    </div>
+  </section>
+  <!-- ////////////////////////////////////////////////////////////// -->
+   <!-- ========================css =======================-->
+ <section id="experts">
+    <h1>Frameworks </h1>
+    <p>تعرف على أطر العمل (Frameworks) التي تساعدك في تطوير تطبيقات الـ Back-End بسرعة وكفاءة  </p>
+<button id="open">   المصادر   </button>
+    <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
+    <hr>
+    <hr>
+    
+    <div class="expert-box">
+    <!-- ************************* -->
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=Lm6irXWjWIo&list=PLynpHWDBs7h1e8dkxgO6jwUHaNb3UTGwQ';" class="profile">
+            <img src="css/images/gango.png" alt="">
+            <br>
+            <br>
+            <h6>Django</h6>
+           
+       
+        </div>
+        <!-- ****************** -->
+                <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=_t4c-vxalp4&pp=ygUZ2YPZiNix2LMgbmV4dCBqcyDYudix2KjZig%3D%3D';" class="profile">
+            <img src="css/images/nextjs.jfif" alt="">
+            <br>
+           
+            <h6>Next.js</h6>
+          
+            <br>
+            
+          
+            <div class="pro-links">
+              
+                      
+            </div>
+        </div>
+<!-- ****************** -->
+
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=bXjRQM_VK_I&list=PLDoPjvoNmBAy_mAhY0x8cHf8oSGPKsEKP';" class="profile">
+            <img src="css/images/laravel.jfif" alt="">
+            <h6>Laravel</h6>
+      
+        </div>
+<!-- ****************** -->
+
+  
+<!-- ****************** -->
+
+     
+    </div>
+  </section>
+   
+  <!-- ////////////////////////////////////////////////////////////// -->
+   <!-- ========================java script =======================-->
+ <section id="experts">
+    <h1>Databases</h1>
+    <p> اكتسب المعرفة اللازمة في قواعد البيانات (Databases) لإدارة وتخزين البيانات بشكل فعال </p>
+    <button id="open">  المصادر     </button>
+    <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
+    <hr>
+    <hr>
+    
+    <div class="expert-box">
+    <!-- ************************* -->
+        <div onclick="window.location.href='https:satr.codes/courses/GwQWjnuJVq/view';" class="profile">
+            <img src="css/images/mongo.png" alt="">
+            <br>
+            <h6> MongoDB</h6>
+           
+      
+        </div>
+        <!-- ****************** -->
+                <div onclick="window.location.href='https:www.youtube.com/watch?v=DftlOK7fCtc&list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9';" class="profile">
+            <img src="css/images/mysql(1).png" alt="">
+         
+            <h6>MySQL</h6>
+          
+       
+        </div>
+<!-- ****************** -->
+
+        <div onclick="window.location.href='https:www.youtube.com/watch?v=qCmnv-cfmCU&list=PLnpnMbLIyidKrBOjXK8G6hiR4awqR_Vfq';" class="profile">
+            <img src="css/images/oracle.jfif" alt="">
+            <br>
+            <br>
+            <h6>Oracle</h6>
+       
+        </div>
+<!-- ****************** -->
+
+
+        </div>
+<!-- ****************** -->
+
+     
+    </div>
+  </section>
+  <!-- ////////////////////////////////////////////////////////////// -->
+   <!-- ========================framwork =======================-->
+ <section id="experts">
+    <h1>API</h1>
+    <p>تعلم كيفية بناء واستخدام واجهات برمجة التطبيقات (APIs) لتسهيل التواصل بين الأنظمة المختلفة وجعل تطبيقاتك أكثر تفاعلية ومرونة</p>
+    <button id="open"> المصادر     </button>
+    <button id="close">  <i class="fa-solid fa-arrow-up"></i>  اغلاق   </button>
+    <hr>
+    <hr>
+    
+    <div class="expert-box">
+    <!-- ************************* -->
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=2AWFuSJ_Cxg&list=PLqPejUavRNTUbBmD6zRNRIHfEeSuUK53H';" class="profile">
+            <img src="css/images/rest.png" alt="">
+            <h6> Rest</h6>
+           
+
+            
+        </div>
+        <!-- ****************** -->
+                <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=CLpmD7hxiBs&list=PLDoPjvoNmBAwH_PyuEFjk3OvXflJJrDRQ';" class="profile">
+            <img src="css/images/jsonapi.png" alt="">
+           
+            <h6>Json </h6>
+         
+          
+        </div>
+
+<!-- ****************** -->
+
+        <div onclick="window.location.href='https:\/\/www.youtube.com/watch?v=mKjvKPlb1rA&list=PLqq-6Pq4lTTZTYpk_1DOowOGWJMIH5T39';" class="profile">
+            <img src="css/images/soap-cloud-gear-thumbnail-1024x957.jpg" alt="">
+            <h6>Soap </h6>
+           
+         
+        </div>
+<!-- ****************** -->
+
+     
+    </div>
+  
+  </section>
+  <!-- ////////////////////////////////////////////////////////////// -->
+   <!-- ========================git =======================-->
+
+
+
+
+ 
+ 
+
+  <footer>
+    <div class="footer-col">
+        <h3> الأدوات</h3>
+        <ul>
+            <li><a href="tools.html">  vscode تنزيل</a></li>
+            <li><a href="tools.html">Git</a></li>
+            <li><a href="tools.html">اللابتوب المناسب</a></li>
+            <li><a href="tools.html"> مواقع مفيده</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h3>  الأسئلة والدعم</h3>
+        <ul>
+            <li><a href="public_qustion.html">ما هو تعلم البرمجة؟ </a></li>
+            <li><a href="public_qustion.html">كيف أبدأ في تعلم البرمجة؟</a></li>
+            <li><a href="public_qustion.html">ما هي أهمية الممارسة في تعلم البرمجة؟ </a></li>
+          
+        </ul>
+    </div>
+    <div class="footer-col">
+     
+    </div>
+    <div class="copyright">
+         <p> copyright ©2024 All rights reserved | This website is made by A.R with ❤️ </p>
+        <div class="pro-links">
+            <!-- يمكنك إضافة روابط الشبكات الاجتماعية هنا -->
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="js.js">
+
+    </script>
+</body>

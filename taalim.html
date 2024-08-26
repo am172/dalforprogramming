@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقال مع خاصية البحث</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .highlight {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>مقال مع خاصية البحث</h1>
+    <input type="text" id="searchInput" class="search-bar" placeholder="ابحث هنا...">
+    <div id="content">
+        <p>في عصر التكنولوجيا والرقمنة، أصبحت البرمجة مهارة حيوية ومطلوبة في سوق العمل. تعتبر البرمجة لغة المستقبل، حيث تتيح للأفراد القدرة على التواصل مع الآلات وتطوير حلول مبتكرة لمختلف التحديات.</p>
+        <p>تعتبر البرمجة أداة قوية يمكنها تغيير طريقة تفكيرك وحل المشكلات. من خلال تعلم البرمجة، يمكنك تطوير المهارات التحليلية، وفتح فرص وظيفية جديدة، وإنشاء مشاريعك الخاصة.</p>
+        <p>هناك العديد من لغات البرمجة المتاحة، ولكن بعضها أكثر شهرة واستخداماً من غيرها، مثل بايثون (Python)، وجافا (Java)، وجافا سكريبت (JavaScript).</p>
+        <p>لتعلم البرمجة، يمكنك الاستفادة من العديد من الموارد المتاحة عبر الإنترنت، مثل الدورات عبر الإنترنت، وكتب البرمجة، والمجتمعات عبر الإنترنت.</p>
+        <p>إذا كنت تبدأ في تعلم البرمجة، ابدأ بأساسيات لغة واحدة، وركز على الممارسة العملية، ولا تخف من الأخطاء.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('searchInput').addEventListener('keyup', function() {
+                var input = document.getElementById('searchInput').value.toLowerCase();
+                var content = document.getElementById('content');
+                var paragraphs = content.getElementsByTagName('p');
+
+                for (var i = 0; i < paragraphs.length; i++) {
+                    var paragraph = paragraphs[i];
+                    var text = paragraph.textContent || paragraph.innerText;
+                    var innerHTML = paragraph.innerHTML;
+
+                    if (input === '') {
+                        paragraph.innerHTML = text;  // عرض النص بدون تظليل إذا كان مربع البحث فارغ
+                    } else if (text.toLowerCase().indexOf(input) > -1) {
+                        var regex = new RegExp(input, "gi");
+                        var highlightedText = text.replace(regex, function(match) {
+                            return '<span class="highlight">' + match + '</span>';
+                        });
+                        paragraph.innerHTML = highlightedText;
+                    } else {
+                        paragraph.innerHTML = text;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

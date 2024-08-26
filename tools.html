@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأدوات - دال</title>
+    <meta name="description" content="اكتشف الأدوات والتقنيات التي يمكن أن تساعدك في تعلم البرمجة وتطوير مشاريعك.">
+
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Fustat:wght@200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+#tools-container {
+    padding: 0 8vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    direction: rtl;
+}
+
+#tools-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#tools-container p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.tool-category {
+    margin-bottom: 40px;
+}
+.tool-category h3 {
+    font-size: 1.5rem;
+    color: rgb(20, 20, 120);
+    margin-bottom: 10px;
+}
+
+.tool-category h2 {
+    font-size: 2rem;
+    color: rgb(20, 20, 120);
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tool-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tool-category ul li {
+    margin-bottom: 20px;
+}
+
+.tool-category h3 {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.tool-category p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+.tool-category #open{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #2c3e50; /* أزرق داكن */
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Tajawal", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent; /* لإضافة تأثير التفاعل */
+    transition: all 0.3s ease; /* تأثير الانتقال */
+}
+
+
+.tool-category #open:hover {
+    background-color: rgb(20, 20, 120); /* لون أفتح عند التمرير */
+    border-color: #ecf0f1; /* لون الإطار عند التمرير */
+    color: #FDC93B;
+}
+
+
+.tool-category #open:active {
+    background-color: #1abc9c; /* لون للتفاعل عند النقر */
+    border-color: #16a085; /* لون الإطار عند النقر */
+     color: #FDC93B;
+}
+
+ #tools-container ul li:nth-child(odd) {
+            background-color: #f0f0f0; /* لون خلفية للعناصر الفردية */
+        }
+
+      #tools-container ul li:nth-child(even) {
+            background-color: #f0f0f0; /* لون خلفية للعناصر الزوجية */
+        }
+
+         #tools-container ul li {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-family: 'Tajawal', sans-serif;
+        }
+</style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <a href="index.html"><img src="css/images/دال.jpg" alt="Logo"></a> 
+        <div class="navigation">
+            <ul>
+                <img id="menu-close" src="css/images/x.png" alt="Close Menu">
+                <li><a href="masar.html">المحتوى التعليمي</a></li>
+                <li><a href="blog.html">المسارات</a></li>
+                <li><a href="public_qustion.html"> مساعدة</a></li>
+            </ul>
+            <img id="menu-btn" src="css/images/klipartz.com.png" alt="Menu">
+        </div>
+    </nav>
+
+
+
+
+
+
+    <section id="tools-container">
+        <h1>الأدوات والتقنيات</h1>
+        <p style="padding-top: 50px;">في هذه الصفحة، نقدم لك مجموعة من الأدوات والتقنيات التي يمكن أن تكون مفيدة في مسيرتك البرمجية. ستجد هنا معلومات حول الأدوات الشائعة والمفيدة التي يمكن أن تساعدك في تحسين مهاراتك وتطوير مشاريعك.</p>
+
+        <div class="tool-category">
+            <h2>الأدوات الأساسية</h2>
+            <ul>
+                <li>
+                    <h3>Visual Studio Code</h3>
+
+                    <p>محرر نصوص شهير يُستخدم لتطوير البرمجيات. يقدم مجموعة من الإضافات والميزات التي تسهل البرمجة وتطوير المشاريع.</p>
+                 <button id="open" onclick="window.location.href='https:\/\/code.visualstudio.com/'">تنزيل</button>
+                </li>
+                <li>
+                    <a href="https://github.com/" style="text-decoration: none;"></a><h3>Git</h3>
+                    <p>نظام إدارة إصدار يسمح لك بتتبع التغييرات في الكود البرمجي والتعاون مع الفرق الأخرى.</p>
+                </li>
+                <li>
+                    <h3>Postman</h3>
+                    <p>أداة لاختبار واجهات برمجة التطبيقات (APIs) التي تساعد في تطوير وتوثيق واختبار APIs.</p>
+                </li>
+            </ul>
+        </div>
+
+                <div class="tool-category">
+    <h2>اللابتوب المناسب لتعلم البرمجة</h2>
+    <ul>
+        <li>
+            <h3>معالج (Processor)</h3>
+            <p>يعد المعالج من أهم العناصر التي تؤثر على أداء اللابتوب في تطوير البرمجيات. إليك بعض المعلومات المفيدة:
+                <ul>
+                    <li><strong>الحد الأدنى:</strong> <strong>Intel Core i3</strong> أو <strong>AMD Ryzen 3</strong> - مناسب للمهام الأساسية والتطوير البسيط.</li>
+                    <li><strong>موصى به:</strong> <strong>Intel Core i5</strong> أو <strong>AMD Ryzen 5</strong> - يوفر أداءً جيدًا لمعظم أدوات التطوير والبرامج.</li>
+                    <li><strong>الأفضل:</strong> <strong>Intel Core i7</strong> أو <strong>AMD Ryzen 7</strong> - يقدم أداءً ممتازًا مع القدرة على التعامل مع مشاريع تطوير كبيرة أو متعددة.</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <h3>ذاكرة RAM (RAM)</h3>
+            <p>تعتبر ذاكرة الوصول العشوائي (RAM) من العناصر الحيوية لتعدد المهام وتسهيل عمليات التطوير:
+                <ul>
+                    <li><strong>الحد الأدنى:</strong> <strong>4GB</strong> - مناسبة للمبتدئين ولكن قد تكون محدودة لبعض البرامج الحديثة.</li>
+                    <li><strong>موصى به:</strong> <strong>8GB</strong> - توفر سعة كافية لتشغيل أدوات التطوير وإدارة مهام متعددة في الوقت نفسه.</li>
+                    <li><strong>الأفضل:</strong> <strong>16GB</strong> - مثالية لمشاريع كبيرة ومتطلبات متعددة، مثل استخدام بيئات تطوير متكاملة (IDEs) الثقيلة.</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <h3>مساحة تخزين SSD</h3>
+            <p>تأثير التخزين على سرعة أداء النظام لا يمكن تجاهله:
+                <ul>
+                    <li><strong>الحد الأدنى:</strong> <strong>128GB SSD</strong> - يتيح لك تخزين الأساسيات ولكنه قد يكون محدودًا للبرامج الكبيرة والبيانات.</li>
+                    <li><strong>موصى به:</strong> <strong>256GB SSD</strong> - يوفر مساحة كافية للبرامج الأساسية والمشاريع الصغيرة.</li>
+                    <li><strong>الأفضل:</strong> <strong>512GB أو 1TB SSD</strong> - مناسب لتخزين البرامج الكبيرة وملفات المشاريع مع الحفاظ على أداء عالي.</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <h3>شاشة عالية الدقة</h3>
+            <p>دقة الشاشة تؤثر على وضوح الرؤية وتسهيل العمل:
+                <ul>
+                    <li><strong>الحد الأدنى:</strong> <strong>HD (1366x768)</strong> - يوفر جودة عرض أساسية ولكن قد يكون غير كافٍ للعمل المطول.</li>
+                    <li><strong>موصى به:</strong> <strong>Full HD (1920x1080)</strong> - يوفر جودة عرض جيدة وتفاصيل واضحة.</li>
+                    <li><strong>الأفضل:</strong> <strong>QHD (2560x1440) أو 4K (3840x2160)</strong> - تقدم دقة أعلى تفيد في عرض تفاصيل دقيقة وراحة في العمل على مشاريع معقدة.</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <h3>بطارية طويلة العمر</h3>
+            <p>عمر البطارية الطويل مهم للحفاظ على الإنتاجية أثناء التنقل:
+                <ul>
+                    <li><strong>الحد الأدنى:</strong> 5-6 ساعات - تكفي للاستخدام الأساسي في اليوم.</li>
+                    <li><strong>موصى به:</strong> 8-10 ساعات - يسمح لك بالعمل دون الحاجة لشحن متكرر خلال اليوم.</li>
+                    <li><strong>الأفضل:</strong> أكثر من 10 ساعات - مثالي للعمل أثناء التنقل أو في الأماكن التي يصعب فيها العثور على مصدر طاقة.</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <h3>مواصفات إضافية</h3>
+            <p>بعض المواصفات الإضافية التي قد تكون مفيدة:
+                <ul>
+                    <li><strong>USB-C</strong> - للشحن السريع وتوصيل الأجهزة.</li>
+                    <li><strong>لوحة مفاتيح مريحة</strong> - تسهم في تحسين تجربة الكتابة.</li>
+                    <li><strong>نظام تبريد جيد</strong> - يحافظ على الأداء الجيد ويمنع ارتفاع درجة الحرارة أثناء الاستخدام المكثف.</li>
+                </ul>
+            </p>
+        </li>
+    </ul>
+</div>
+        <div class="tool-category">
+            <h2>أدوات التعلم</h2>
+            <ul>
+                
+                <li>
+                    <h3>Codecademy</h3>
+                    <p>منصة تعليمية تقدم دورات تفاعلية في لغات البرمجة والتقنيات المختلفة.</p>
+                </li>
+                <li>
+                    <h3>منصة سطر</h3>
+                    <p>منصة سطر (Satr) هي منصة عربية تهدف إلى توفير موارد تعليمية في مجال البرمجة والتقنية. تقدم المنصة مجموعة من الدورات التدريبية والدروس التي تغطي مواضيع متنوعة في البرمجة وتطوير البرمجيات</p>
+                </li>
+                <li>
+                    <h3>Khan Academy</h3>
+                    <p>منصة تعليمية تحتوي على دروس وشروحات في البرمجة ومجالات أخرى.</p>
+                </li>
+                <li>
+                    <h3>Coursera</h3>
+                    <p>منصة تقدم دورات تعليمية من جامعات ومؤسسات تعليمية عالمية في مختلف التخصصات بما في ذلك البرمجة.</p>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </section>
+  <footer>
+    <div class="footer-col">
+        <h3> الأدوات</h3>
+        <ul>
+            <li><a href="tools.html">  vscode تنزيل</a></li>
+            <li><a href="tools.html">Git</a></li>
+            <li><a href="tools.html">اللابتوب المناسب</a></li>
+            <li><a href="tools.html"> مواقع مفيده</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h3>  الأسئلة والدعم</h3>
+        <ul>
+            <li><a href="public_qustion.html">ما هو تعلم البرمجة؟ </a></li>
+            <li><a href="public_qustion.html">كيف أبدأ في تعلم البرمجة؟</a></li>
+            <li><a href="public_qustion.html">ما هي أهمية الممارسة في تعلم البرمجة؟ </a></li>
+          
+        </ul>
+    </div>
+    <div class="footer-col">
+     
+    </div>
+    <div class="copyright">
+         <p> copyright ©2024 All rights reserved | This website is made by A.R with ❤️ </p>
+        <div class="pro-links">
+            <!-- يمكنك إضافة روابط الشبكات الاجتماعية هنا -->
+        </div>
+    </div>
+</footer>
+
+
+    <script src="js.js"></script>
+</body>
+</html>

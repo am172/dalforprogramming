@@ -827,7 +827,7 @@ nav.dark-mode {
 .profile img {
      width: 140px;
     height: 130px;
-
+    margin-top: 10px;
     border-radius: 30%;
 }
 

@@ -1240,12 +1240,16 @@ nav.dark-mode {
 
     #beginner .begin .bgn a #bgn {
         border: 1px solid;
-        padding: 4px 30px 4px 30px;
+        /* padding: 4px 30px 4px 30px; */
         font-size: 1.5rem;
         width: 20px;
         background-color: rgb(35, 35, 85);
         border-radius: 8px;
         color: #c5ddef;
+        /* margin-bottom: 10px; */
+        position: relative;
+        bottom: 49px;
+        left: -151px;
     }
 
     /* blog */

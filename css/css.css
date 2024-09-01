@@ -182,7 +182,6 @@ nav .navigation ul li a {
     color: rgb(21, 21, 100);
     font-weight: 800;
     font-size: 16px;
-    font-family: "El Messiri", sans-serif;
     transition: .3S ease-in-out;
     direction: rtl;
 }

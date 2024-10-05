@@ -347,6 +347,7 @@ nav .navigation #log {
     color: rgb(46, 46, 59);
     font-family: "Tajawal", sans-serif;
     display: flex;
+    padding: 6px;
 }
 
 
@@ -426,7 +427,7 @@ nav .navigation #log {
 
 /* FOOTER */
 footer {
-    padding: 2vw;
+    padding: 3vw;
     background-color: #101c32;
     display: flex;
     justify-content: space-between;
@@ -839,6 +840,7 @@ footer .copyright .pro-links i:hover {
     margin-left: 70px;
     margin-right: 80px;
     margin-bottom: 57px;
+    border-right: 8px solid rgb(35, 35, 85);
 
 }
 
